@@ -18,13 +18,36 @@
             <div class="line3"></div>
         </div>
         <div class="nav-list">
-            <input type="text"> <button>pe</button>
-            <button>teste</button>
-            <button>teste</button>
+            <input type="text" class="pesquisar" placeholder="pesquisa"> <button class="button2nav"><img src="img/search.png" alt=""></button>
+            <div class="buttons">
+              <button class="button-nav1">Cadastro</button>
+            <button class="button-nav">Login</button>
         </div>
+            </div>
+            
       </nav>
- 
     </header>
+
+    <section class="banner">
+
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1800">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="./img/propaganda1.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="./img/propaganda2.png" class="d-block w-100" alt="...">
+    </div>
+     <div class="carousel-item">
+      <img src="./img/propaganda3 (1).png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="./img/propaganda4.png" class="d-block w-100" alt="...">
+    </div>
+  </div>
+</div>
+ 
+    </section>
 
 
 
@@ -34,36 +57,58 @@
 
     
     <script>
-  class MobileNavbar{
-    constructor(mobileMenu, navList, navLinks){
-        this.mobileMenu=document.querySelector(mobileMenu)
-        this.Navlist=document.querySelector(navList)
-        this.navLinks= document.querySelectorAll(navLinks)
-        this.activeClass = "active";
+      
+class MobileNavbar {
+  constructor(MobileMenu, navList, navLinks) {
+    this.MobileMenu = document.querySelector(MobileMenu);
+    this.navList = document.querySelector(navList);
+    this.navLinks = document.querySelectorAll(navLinks); 
+    this.activeClass = "active";
 
-        this.handleClick = this.handleClick.bind(this);
-
-    }
-    handleClick(){
-        console.log(this);
-        this.navList.classList.toggle(this.activeClass);
-    }
-    addclickEvent(){
-        this.mobileMenu.addEventLitener("click",this.handleClick);
-    }
-    init(){
-        if(this.mobileMenu){
-            this.addclickEvent();
-        }
-        return this;
-    }
+    this.handleClick = this.handleClick.bind(this);
   }
-  const MobileNavbar=new MobileNavbar(
-    ".mobile-menu",
-    ".nav-list",
-  );
+
+  animateLinks() {
+    this.navLinks.forEach((link, index) => {
+      link.style.animation
+        ? link.style.animation = ""
+        : link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`;
+    });
+  }
+
+  handleClick() {
+    this.navList.classList.toggle(this.activeClass);
+    this.MobileMenu.classList.toggle(this.activeClass);
+    this.animateLinks();
+  }
+
+  addClickEvent() {
+    this.MobileMenu.addEventListener("click", this.handleClick);
+  }
+
+  init() {
+    if (this.MobileMenu) {
+      this.addClickEvent();
+    }
+    return this;
+  }
+}
+
+const mobileNavbar = new MobileNavbar(
+  ".mobile-menu",
+  ".nav-list",
+  ".nav-list *"
+);
+
+mobileNavbar.init();  // <-- AQUI ESTAVA FALTANDO
 
 
+
+
+
+
+
+ 
     </script>
 </body>
 </html>
