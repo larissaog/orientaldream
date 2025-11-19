@@ -13,15 +13,33 @@
       <nav>
         <p class="logo">OrientalDream | Sonho Oriental</p>
         <div class="mobile-menu">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
+          <img src="./img/options.png" alt="" class="icon-open">
+           <img src="./img/cancel.png" class="icon-close">
         </div>
         <div class="nav-list">
             <input type="text" class="pesquisar" placeholder="pesquisa"> <button class="button2nav"><img src="img/search.png" alt=""></button>
             <div class="buttons">
               <button class="button-nav1">Cadastro</button>
             <button class="button-nav">Login</button>
+        </div>
+
+         <!-- EXTRA que só aparece quando o menu abre -->
+        <div class="extra-content">
+            <ul>
+             <a href=""><li>Perguntas frequentes</li></a>
+              <a href=""><li>Sobre a empresa</li></a>
+             <a href=""><li>Usabilidade e Acessibilidade</li></a>
+              <a href=""><li>Fale conosco</li></a>
+            </ul>
+
+            <div class="imgmenu">
+              <img src="./img/email (1).png" alt="">
+              <img src="./img/facebook (2).png" alt="">
+              <img src="./img/instagram (4).png" alt="">
+              <img src="./img//chamada-telefonica.png" alt="">
+
+            </div>
+            
         </div>
             </div>
             
@@ -100,10 +118,30 @@ const mobileNavbar = new MobileNavbar(
   ".nav-list *"
 );
 
-mobileNavbar.init();  // <-- AQUI ESTAVA FALTANDO
+mobileNavbar.init(); 
 
+window.addEventListener("scroll", function() {
+  const nav = document.querySelector("nav");
 
+  if (window.scrollY > 50) { 
+    nav.classList.add("sticky");
+  } else {
+    nav.classList.remove("sticky");
+  }
+});
 
+// parte para deixar o menu fixo ao rolar a página
+window.addEventListener("scroll", function () {
+    const nav = document.querySelector("nav");
+
+    if (window.scrollY > 0) {
+        nav.classList.add("sticky");
+        document.body.classList.add("menu-sticky");
+    } else {
+        nav.classList.remove("sticky");
+        document.body.classList.remove("menu-sticky");
+    }
+});
 
 
 

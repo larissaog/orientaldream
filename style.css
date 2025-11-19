@@ -1,142 +1,182 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+* {
     margin: 0;
     padding: 0;
+    font-family: "Roboto Flex", sans-serif;
 }
 
-.logo{
+body.menu-sticky {
+    padding-top: 8vh; /* mesma altura do nav */
+}
+
+.logo {
     text-transform: uppercase;
     letter-spacing: 2px;
+     font-family: "Trade Winds", system-ui;
 }
 
-nav {
+nav{
     display: flex;
-    justify-content:space-around ;
+    justify-content: space-around;
     align-items: center;
-    background: rgb(100, 98, 98);
+    background: rgb(255, 255, 255);
     height: 8vh;
 }
 
-.nav-list{
+nav.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999; /* fica por cima do conteúdo */
+}
+
+
+.nav-list {
     list-style: none;
     display: flex;
     gap: 30px;
 }
 
-.mobile-menu{
+.mobile-menu {
     display: none;
     cursor: pointer;
-   
 }
 
-.mobile-menu div {
-    width: 32px;
-    height: 2px;
-    background: #fff;
-    margin: 8px;
+.icon-close {
+    display: none;
 }
 
-.button-nav1{
+.mobile-menu.active .icon-open {
+    display: none;
+}
+
+.mobile-menu.active .icon-close {
+    display: block;
+}
+
+
+.button-nav1 {
     width: 150px;
     background-color: #BE6DBD;
     border-radius: 15px;
     border: none;
-    color: white;
-
+    color: rgb(0, 0, 0);
 }
 
-.button-nav{
+.button-nav {
     width: 150px;
     background-color: #F4D697;
     border-radius: 15px;
     height: 35px;
     border: none;
-    color: white;
-
+    color: rgb(0, 0, 0);
 }
 
-.pesquisar{
+.pesquisar {
     width: 250px;
-    
-
 }
-.button2nav{
+
+.button2nav {
     width: 100px;
     border: none;
     border-radius: 10px;
-    background-color: #BE6DBD;
+   border: 1px solid black;
 }
 
-.buttons{
+.buttons {
     margin-left: 250px;
     display: flex;
     gap: 50px;
 }
 
+/* ======== MOBILE ======== */
+@media (max-width: 999px) {
 
-
-
-
-@media (max-width: 999px){
-   @media (max-width: 999px){
-    .nav-list{
-        position: absolute;
+    .nav-list {
+        position: fixed; /* FIXA NA TELA TODA */
         top: 8vh;
         right: 0;
-        width: 65vw;
+        width:65vw;   /* AGORA PEGA A TELA TODA */
         height: 92vh;
-        flex-direction: column;
-        align-items: center;
+        display: flex;
         justify-content: center;
+        align-items: center;
+        flex-direction: column;
         gap: 40px;
-        background: rgb(100, 98, 98);
-        transform: translateX(100%);
-        transition: transform 0.3s ease-in;
-        padding-top: 30px;
-
-        z-index: 9999;   /* <-- AQUI A MAGIA */
+        background: rgb(255, 255, 255);
+        transform: translateX(100%); /* escondido */
+        transition: transform 0.6s ease-in;
+        padding-top: 70px;
+        overflow-x: hidden; /* impede sair para fora */
+        z-index: 9999;
+        padding-left: 30px;
+        padding-right: 30px;
+        
     }
 
-    .mobile-menu{
+    .nav-list.active {
+        transform: translateX(0); /* aparece */
+    }
+
+    .mobile-menu {
         display: block;
-        z-index: 10000; /* Hambúrguer sempre na frente */
+        z-index: 10000;
         position: relative;
     }
-}
-.buttons{
-    margin-left: 0 !important;
-    flex-direction: column;
-    gap: 20px;
-}
 
-  
-}
+    .buttons {
+        margin-left: 0 !important;
+        gap: 10px;
+    }
 
-.nav-list.active{
-    transform: translateX(0);
-
+    .button2nav{
+        background-color: #ffffff;
+        filter: invert(100%);
+    }
 }
 
+
+/* ANIMAÇÃO DOS LINKS */
 @keyframes navLinkFade {
-    from{
+    from {
         opacity: 0;
         transform: translateX(50px);
     }
-
-    to{
+    to {
         opacity: 1;
         transform: translateX(0);
     }
 }
 
-.mobile-menu.active .line1{
-    transform: rotate(-45deg) translate(-8px, 8px);
 
+.extra-content {
+    display: none;               /* escondido quando menu estiver fechado */
+    text-align: center;
+    padding-top: 140px;
+    
 }
-.mobile-menu.active .line2{
-opacity: 0;
+
+a{
+    color: black;
 }
 
-.mobile-menu.active .line3{
-     transform: rotate(45deg) translate(-5px, 7px);
+.nav-list.active .extra-content {
+    display: block;              /* aparece só quando o menu abre */
+    animation: aparecer .3s ease forwards;
+}
 
+.imgmenu{
+    padding-top: 70px;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    cursor: progress;
+}
+
+@keyframes aparecer {
+    from { opacity: 0; transform: translateY(10px); }
+    to   { opacity: 1; transform: translateY(0); }
 }
