@@ -136,8 +136,54 @@ nav.sticky {
         background-color: #ffffff;
         filter: invert(100%);
     }
+
+    .swiper-slide .card {
+    width: 250px !important;
+    margin: 0 auto;
+    margin-left: 10px;   
 }
 
+
+
+
+
+    
+}
+
+@media (max-width: 768px) {
+  .swiper-slide .card {
+      width: 250px !important;
+      margin: 0 auto;
+      margin-left: 10px;   
+
+  }
+  .buttoncard{
+    margin-left: 5px !important; 
+}
+
+.infos-card{
+   display: flex;
+   gap: 15px;
+}
+
+.card{
+    height: 450px;
+}
+
+.infofooter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.inputfooter{
+    margin-top: 20px;
+}
+
+footer{
+    height: 240px !important;
+}
+
+}
 
 /* ANIMAÇÃO DOS LINKS */
 @keyframes navLinkFade {
@@ -180,3 +226,158 @@ a{
     from { opacity: 0; transform: translateY(10px); }
     to   { opacity: 1; transform: translateY(0); }
 }
+
+
+.imgprodut{
+    margin-left: 20px;
+}
+
+.peqproduto{
+    display: flex;
+    justify-content: center;
+}
+
+.bemvindo{
+     font-family: "Trade Winds", system-ui;
+}
+
+.card1{
+    height: 700px;
+     background-color: #F4D697;
+    margin-top: 30px;
+    margin-bottom: 10px ;
+}
+
+.card2{
+    height: 700px;
+    margin-top: 30px;
+    margin-bottom: 10px ;
+}
+
+
+
+.swiper-wrapper{
+    margin-top: 100px;
+    
+    
+
+}
+
+.card{
+    height: 450px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.card-title{
+    text-align: center;
+}
+
+.card-text{
+    text-align: center;
+}
+
+.buttoncard{
+    margin-left: 35px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: #BE6DBD;
+    transition: 1s;
+    
+    
+   
+}
+
+ 
+
+.buttoncard:hover{
+    transform: translateY(-3px);
+    background-color: #a1a1a1;
+}
+
+.infos-card{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 20px;
+}
+
+.input1{
+    width: 300px;
+}
+
+.titlecards{
+    font-family: "Trade Winds", system-ui;
+}
+
+footer{
+    background-color: black;
+    height: 220px;
+    color: white;
+}
+
+.imgfooter{
+    filter: invert(100%);
+
+}
+
+.redesfooter{
+    display: flex;
+    gap: 10px;
+    
+
+}
+
+.infofooter{
+    padding-top: 20px;
+    margin-left: 30px;
+   
+}
+
+.inputfooter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+  
+}
+
+.emailfooter{
+    text-align: center;
+}
+
+.brasil{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+.buttonemail{
+    width: 80px;
+    border-radius: 10px;
+    background-color: #BE6DBD;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
