@@ -126,18 +126,10 @@ nav.sticky {
     }
 
     .mobile-menu {
-        /* display: block;
+        display: block;
         z-index: 10000;
-        position: relative; */
-        position: absolute;
-    right: 10px;   /* puxa pra dentro */
-    top: 15px;
-    max-width: 40px;
-    overflow: hidden; /* impede passar da tela */
+        position: relative;
     }
-    nav {
-    position: relative;
-}
 
     .buttons {
         margin-left: 0 !important;
@@ -356,4 +348,3 @@ footer {
 * {
   outline: 1px solid rgba(255, 0, 0, 0.3);
 }
-
