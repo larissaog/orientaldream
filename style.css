@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
 
-
 * {
     margin: 0;
     padding: 0;
@@ -9,16 +8,16 @@
 }
 
 body.menu-sticky {
-    padding-top: 8vh;
+    padding-top: 8vh; /* mesma altura do nav */
 }
 
 .logo {
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-family: "Trade Winds", system-ui;
+     font-family: "Trade Winds", system-ui;
 }
 
-nav {
+nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -31,8 +30,9 @@ nav.sticky {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 999;
+    z-index: 999; /* fica por cima do conteúdo */
 }
+
 
 .nav-list {
     list-style: none;
@@ -56,6 +56,7 @@ nav.sticky {
 .mobile-menu.active .icon-close {
     display: block;
 }
+
 
 .button-nav1 {
     width: 150px;
@@ -82,11 +83,11 @@ nav.sticky {
     width: 100px;
     border: none;
     border-radius: 10px;
-    border: 1px solid black;
+   border: 1px solid black;
 }
 
 .buttons {
-    margin-left: 0;       /* <-- CORREÇÃO: tira overflow */
+    margin-left: 250px;
     display: flex;
     gap: 50px;
 }
@@ -95,10 +96,10 @@ nav.sticky {
 @media (max-width: 999px) {
 
     .nav-list {
-        position: fixed;
+        position: fixed; /* FIXA NA TELA TODA */
         top: 8vh;
         right: 0;
-        width: 100%;                        /* <-- CORREÇÃO */
+        width:65vw;   /* AGORA PEGA A TELA TODA */
         height: 92vh;
         display: flex;
         justify-content: center;
@@ -106,17 +107,18 @@ nav.sticky {
         flex-direction: column;
         gap: 40px;
         background: rgb(255, 255, 255);
-        transform: translateX(100%);
+        transform: translateX(100%); /* escondido */
         transition: transform 0.6s ease-in;
         padding-top: 70px;
-        overflow-x: hidden;
+        overflow-x: hidden; /* impede sair para fora */
         z-index: 9999;
-        padding-left: 20px;                 /* <-- reduzido */
-        padding-right: 20px;                /* <-- reduzido */
+        padding-left: 30px;
+        padding-right: 30px;
+        
     }
 
     .nav-list.active {
-        transform: translateX(0);
+        transform: translateX(0); /* aparece */
     }
 
     .mobile-menu {
@@ -130,54 +132,56 @@ nav.sticky {
         gap: 10px;
     }
 
-    .button2nav {
+    .button2nav{
         background-color: #ffffff;
         filter: invert(100%);
     }
 
-    /* ====== CORREÇÃO DO SWIPER ====== */
     .swiper-slide .card {
-        width: 250px !important;
-        margin-left: auto !important;       /* <-- CORREÇÃO */
-        margin-right: auto !important;      /* <-- CORREÇÃO */
-    }
+    width: 250px !important;
+    margin: 0 auto;
+    margin-left: 10px;   
+}
+
+
+
+
+
+    
 }
 
 @media (max-width: 768px) {
-
-  /* ====== CORREÇÃO DO SWIPER ====== */
   .swiper-slide .card {
       width: 250px !important;
-      margin-left: auto !important;         /* <-- CORREÇÃO */
-      margin-right: auto !important;        /* <-- CORREÇÃO */
-  }
+      margin: 0 auto;
+      margin-left: 10px;   
 
-  .buttoncard {
-    margin-left: 5px !important;
   }
+  .buttoncard{
+    margin-left: 5px !important; 
+}
 
-  .infos-card {
-    display: flex;
-    gap: 15px;
-  }
+.infos-card{
+   display: flex;
+   gap: 15px;
+}
 
-  .card {
+.card{
     height: 450px;
-  }
+}
 
-  .infofooter {
+.infofooter{
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-
-  .inputfooter {
+}
+.inputfooter{
     margin-top: 20px;
-  }
+}
 
-  footer {
+footer{
     height: 240px !important;
-  }
+}
 
 }
 
@@ -193,22 +197,24 @@ nav.sticky {
     }
 }
 
+
 .extra-content {
-    display: none;
+    display: none;               /* escondido quando menu estiver fechado */
     text-align: center;
     padding-top: 140px;
+    
 }
 
-a {
+a{
     color: black;
 }
 
 .nav-list.active .extra-content {
-    display: block;
+    display: block;              /* aparece só quando o menu abre */
     animation: aparecer .3s ease forwards;
 }
 
-.imgmenu {
+.imgmenu{
     padding-top: 70px;
     gap: 10px;
     display: flex;
@@ -221,65 +227,77 @@ a {
     to   { opacity: 1; transform: translateY(0); }
 }
 
-.imgprodut {
+
+.imgprodut{
     margin-left: 20px;
 }
 
-.peqproduto {
+.peqproduto{
     display: flex;
     justify-content: center;
 }
 
-.bemvindo {
-    font-family: "Trade Winds", system-ui;
+.bemvindo{
+     font-family: "Trade Winds", system-ui;
 }
 
-.card1 {
+.card1{
     height: 700px;
-    background-color: #F4D697;
+     background-color: #F4D697;
     margin-top: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 10px ;
 }
 
-.card2 {
+.card2{
     height: 700px;
     margin-top: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 10px ;
 }
 
-.swiper-wrapper {
+
+
+.swiper-wrapper{
     margin-top: 100px;
+    
+    
+
 }
 
-.card {
+.card{
     height: 450px;
-    width: 300px;
-    margin: 0 auto;        /* <-- CORREÇÃO importante */
+    margin-left: 50px;
+    margin-right: 50px;
     border-radius: 5px;
+    width: 300px;
 }
 
-.card-title {
+.card-title{
     text-align: center;
 }
 
-.card-text {
+.card-text{
     text-align: center;
 }
 
-.buttoncard {
+.buttoncard{
     margin-left: 35px;
     width: 200px;
     border-radius: 10px;
     background-color: #BE6DBD;
     transition: 1s;
+    
+    
+   
 }
 
-.buttoncard:hover {
+ 
+
+.buttoncard:hover{
     transform: translateY(-3px);
     background-color: #a1a1a1;
 }
 
-.infos-card {
+.infos-card{
     display: flex;
     justify-content: space-between;
     margin-left: 20px;
@@ -287,58 +305,60 @@ a {
     padding-top: 20px;
 }
 
-.input1 {
+.input1{
     width: 300px;
 }
 
-.titlecards {
+.titlecards{
     font-family: "Trade Winds", system-ui;
 }
 
-footer {
+footer{
     background-color: black;
     height: 220px;
     color: white;
 }
 
-.imgfooter {
+.imgfooter{
     filter: invert(100%);
+
 }
 
-.redesfooter {
+.redesfooter{
     display: flex;
     gap: 10px;
+    
+
 }
 
-.infofooter {
+.infofooter{
     padding-top: 20px;
     margin-left: 30px;
+   
 }
 
-.inputfooter {
+.inputfooter{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    
+  
 }
 
-.emailfooter {
+.emailfooter{
     text-align: center;
 }
 
-.brasil {
+.brasil{
     display: flex;
     justify-content: end;
     align-items: end;
 }
 
-.buttonemail {
+.buttonemail{
     width: 80px;
     border-radius: 10px;
     background-color: #BE6DBD;
     color: white;
-}
-/* DEBUG: mostrar quem está causando overflow */
-* {
-  outline: 1px solid rgba(255, 0, 0, 0.3);
 }
