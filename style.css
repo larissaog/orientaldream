@@ -9,8 +9,7 @@
 
 body.menu-sticky {
     padding-top: 8vh; /* mesma altura do nav */
-    padding-left: env(safe-area-inset-left);
-    padding-right: env(safe-area-inset-right);
+   
 }
 
 
@@ -27,8 +26,7 @@ nav{
     background: rgb(255, 255, 255);
     height: 8vh;
     nav {
-    padding-left: env(safe-area-inset-left);
-    padding-right: env(safe-area-inset-right);
+   
 }
 
 }
