@@ -195,30 +195,26 @@ footer{
 
 /* ======== MOBILE ======== */
 @media (max-width: 480px) {
-    
-    .infos-card {
+    .card1 .infos-card {
         flex-direction: column;
-        gap: 15px;
         align-items: center;
         justify-content: center;
+        gap: 15px;
         width: 100%;
     }
 
-    .input1 {
+    .card1 .input1,
+    .card1 #filtro {
         width: 90%;
-        max-width: 300px;
+        max-width: 320px;
     }
 
-    #filtro {
-        width: 90%;
-        max-width: 300px;
-    }
-
-    .titlecards {
+    .card1 .titlecards {
         text-align: center;
         width: 100%;
     }
 }
+
 
 
 
