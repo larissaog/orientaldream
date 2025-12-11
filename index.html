@@ -203,17 +203,20 @@
 
 <section class="card2">
   <div class="infos-card">
-    <h3 class="titlecards">Comidas</h3>
-    <input type="text" placeholder="pesquise pelo seu produto" class="input1">
-     <select name="filtro" id="filtro">
-            <option value="primeiro">Relevante</option>
-          <option value="">Maior preço</option>
-          <option value="">Menor preço</option>
-          <option value="">Mais comprado</option>
-          <option value="">Industrializados</option>
-          <option value="">Produtos naturais</option>
-        </select>
+  <h3 class="titlecards">Comidas</h3>
+  <div class="search-wrapper">
+    <input type="text" placeholder="Pesquise pelo seu produto" class="input1" id="inputPesquisa">
+    <button class="btn-search" onclick="pesquisarProduto()">🔍</button>
   </div>
+  <select name="filtro" id="filtro">
+    <option value="primeiro">Relevante</option>
+    <option value="">Maior preço</option>
+    <option value="">Menor preço</option>
+    <option value="">Mais comprado</option>
+    <option value="">Industrializados</option>
+    <option value="">Produtos naturais</option>
+  </select>
+</section>
 
 
 
