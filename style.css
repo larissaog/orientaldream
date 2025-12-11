@@ -357,8 +357,9 @@ a{
 footer{
     margin-top: 50px;
     background-color: black;
-    height: 220px;
+    height: 250px;
     color: white;
+    
 }
 
 .imgfooter{
@@ -403,4 +404,6 @@ footer{
     border-radius: 10px;
     background-color: #BE6DBD;
     color: white;
+    
 }
+
