@@ -195,20 +195,31 @@ footer{
 
 /* ======== MOBILE ======== */
 @media (max-width: 480px) {
-    .swiper-slide .card {
-        width: 85vw !important;
-        margin: 0 auto !important;
+    
+    .infos-card {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
     }
 
-    .card {
-        margin-left: auto !important;
-        margin-right: auto !important;
+    .input1 {
+        width: 90%;
+        max-width: 300px;
     }
 
-    .buttoncard {
-        margin-left: 0 !important;
+    #filtro {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .titlecards {
+        text-align: center;
+        width: 100%;
     }
 }
+
 
 
 
