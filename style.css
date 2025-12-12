@@ -247,6 +247,18 @@ footer{
     background-color: rgb(202, 220, 39);
 }
 
+.infos-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    gap: 10px;
+}
+
+
+
 /* ANIMAÇÃO DOS LINKS */
 @keyframes navLinkFade {
     from {
