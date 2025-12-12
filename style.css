@@ -151,11 +151,19 @@ nav.sticky {
         filter: invert(100%);
     }
 
-    /* .swiper-slide .card {
-      width: 100% !important;
-      max-width: 250px;
-  } */
+    .card{
+    width: 35vw;
+    height: 450px;
+}
 
+.swiper-slide {
+        margin-right: 35px !important; /* espaço entre os cards */
+        width: auto !important;
+    }
+
+    .swiper-wrapper {
+        padding-left: 15px !important; /* opcional: puxa o carrossel um pouquinho da borda */
+    }
 
 
 
@@ -164,24 +172,7 @@ nav.sticky {
 }
 
 @media (max-width: 768px) {
-  /* .swiper-slide .card {
-      width: 250px !important;
-      margin: 0 auto;
-      margin-left: 10px;   
-
-  }
-  .buttoncard{
-    margin-left: 5px !important; 
-}
-
-.infos-card{
-   display: flex;
-   gap: 15px;
-}
-
-.card{
-    height: 450px;
-} */
+  
 
 .infofooter{
     display: flex;
@@ -195,6 +186,20 @@ nav.sticky {
 footer{
     height: 240px !important;
 }
+
+.card{
+    width: 45vw;
+     height: 450px;
+}
+
+.swiper-slide {
+        margin-right: 30px !important; /* espaço entre os cards */
+        width: auto !important;
+    }
+
+    .swiper-wrapper {
+        padding-left: 15px !important; /* opcional: puxa o carrossel um pouquinho da borda */
+    }
 
 }
 
@@ -219,21 +224,29 @@ footer{
         max-width: 300px;
     }
 
-    .lead{
+   .search-wrapper{
+    display: flex;
+    gap: 10px;
+   }
 
+  .card{
+    width: 65vw;        /* ocupa 85% da tela */
+    max-width: none;
+     height: 450px;
+  }
+
+   .swiper-slide {
+        margin-right: 10px !important; /* espaço entre os cards */
+        width: auto !important;
     }
 
-    /* .titlecards {
-        text-align: center;
-        width: 100%;
+    .swiper-wrapper {
+        padding-left: 15px !important; /* opcional: puxa o carrossel um pouquinho da borda */
     }
-    .swiper-slide .card {
-      width: 100% !important;
-      max-width: 220px;
-  } */
+ 
 }
 
-/* config dos cards */
+/* config dos cards GERAL */
 .card1, .card2{
     height: 700px;
 }
@@ -256,6 +269,38 @@ footer{
     padding-bottom: 20px;
     gap: 10px;
 }
+
+
+
+.swiper-slide {
+        margin-right: 30px !important; /* espaço entre os cards */
+        width: auto;
+    }
+
+    .swiper-wrapper {
+        padding-left: 15px; /* opcional: puxa o carrossel um pouquinho da borda */
+    }
+ 
+.card-title{
+
+}
+
+.card-text{
+
+}
+
+.buttoncard{
+
+}
+
+.btn{
+
+}
+
+#exampleModal{
+    background-color: #BE6DBD;
+}
+
 
 
 
@@ -315,6 +360,8 @@ a{
 .icon-open,.icon-close {
     filter: invert(100%);
 }
+
+
 
  
 
