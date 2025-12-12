@@ -17,8 +17,8 @@
       <nav>
         <p class="logo">OrientalDream | Sonho Oriental</p>
         <div class="mobile-menu">
-          <img src="./img/options.png" alt="" class="icon-open">
-           <img src="./img/cancel.png" class="icon-close">
+          <img src="./img/menu.png" alt="" class="icon-open">
+           <img src="./img/cancelar.png" class="icon-close">
         </div>
         <div class="nav-list">
             <input type="text" class="pesquisar" placeholder="pesquisa"> <button class="button2nav"><img src="img/search.png" alt=""></button>
@@ -75,10 +75,8 @@
   <div class="container mt-5">
     <div class="row">
       <div class="col text-center">
-        <h2 class="bemvindo">Bem-vindo ao OrientalDream</h2>
-        <p class="lead">Seu destino para produtos orientais autênticos e de alta qualidade.</p>
-       <div class="peqproduto"> <h5 class="input1"><input type="text" placeholder="Busque pelo seu produto"></h5> <a href=""><img src="img/search.png" alt="" class="imgprodut"></a></div>
-      </div>
+        <h2 class="bemvindo">Bem-vindo(a) ao OrientalDream</h2>
+        <p class="lead">Seu destino para produtos orientais autênticos e de alta qualidade.<br>Com um toque de sofisticação e enviado pelos melhores fornecedores.</p>
     </div>
   </div>
 </section>
@@ -388,13 +386,7 @@ class MobileNavbar {
     this.handleClick = this.handleClick.bind(this);
   }
 
-  // animateLinks() {
-  //   this.navLinks.forEach((link, index) => {
-  //     link.style.animation
-  //       ? link.style.animation = ""
-  //       : link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`;
-  //   });
-  // }
+  
 
   handleClick() {
     this.navList.classList.toggle(this.activeClass);

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -21,6 +21,10 @@
     text-transform: uppercase;
     letter-spacing: 2px;
      font-family: "Trade Winds", system-ui;
+}
+
+.lead{
+    font-family: "Roboto Condensed", sans-serif;
 }
 
 nav{
@@ -215,6 +219,10 @@ footer{
         max-width: 300px;
     }
 
+    .lead{
+
+    }
+
     /* .titlecards {
         text-align: center;
         width: 100%;
@@ -265,10 +273,6 @@ a{
     cursor: progress;
 }
 
-/* @keyframes aparecer {
-    from { opacity: 0; transform: translateY(10px); }
-    to   { opacity: 1; transform: translateY(0); }
-} */
 
 
 .imgprodut{
@@ -285,7 +289,9 @@ a{
 }
 
 
-
+.icon-open,.icon-close {
+    filter: invert(100%);
+}
 
  
 
