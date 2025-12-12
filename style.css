@@ -7,11 +7,12 @@
     font-family: "Roboto Flex", sans-serif;
 }
 
-body.menu-sticky {
+/*body.menu-sticky {
     padding-top: 8vh; /* mesma altura do nav */
-    padding-left: env(safe-area-inset-left);
+
+    /* padding-left: env(safe-area-inset-left);
     padding-right: env(safe-area-inset-right);
-}
+}*/ 
 
 
 
@@ -28,10 +29,8 @@ nav{
     align-items: center;
     background: rgb(255, 255, 255);
     height: 8vh;
-    nav {
-    padding-left: env(safe-area-inset-left);
-    padding-right: env(safe-area-inset-right);
-}
+    /* padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right); */
 
 }
 
@@ -148,11 +147,10 @@ nav.sticky {
         filter: invert(100%);
     }
 
-    .swiper-slide .card {
-    width: 250px !important;
-    margin: 0 auto;
-    margin-left: 10px;   
-}
+    /* .swiper-slide .card {
+      width: 100% !important;
+      max-width: 250px;
+  } */
 
 
 
@@ -162,7 +160,7 @@ nav.sticky {
 }
 
 @media (max-width: 768px) {
-  .swiper-slide .card {
+  /* .swiper-slide .card {
       width: 250px !important;
       margin: 0 auto;
       margin-left: 10px;   
@@ -179,7 +177,7 @@ nav.sticky {
 
 .card{
     height: 450px;
-}
+} */
 
 .infofooter{
     display: flex;
@@ -199,13 +197,13 @@ footer{
 /* ======== MOBILE ======== */
 @media (max-width: 480px) {
     
-    .infos-card {
+    /* .infos-card {
         flex-direction: column;
         gap: 15px;
         align-items: center;
         justify-content: center;
         width: 100%;
-    }
+    } */
 
     .input1 {
         width: 90%;
@@ -217,10 +215,14 @@ footer{
         max-width: 300px;
     }
 
-    .titlecards {
+    /* .titlecards {
         text-align: center;
         width: 100%;
     }
+    .swiper-slide .card {
+      width: 100% !important;
+      max-width: 220px;
+  } */
 }
 
 
@@ -282,77 +284,13 @@ a{
      font-family: "Trade Winds", system-ui;
 }
 
-.card1{
-    height: 700px;
-     background-color: #F4D697;
-    margin-top: 30px;
-    margin-bottom: 10px ;
-}
-
-/* .card2{
-    height: 700px;
-    margin-top: 30px;
-    margin-bottom: 10px ;
-} */
 
 
-
-.swiper-wrapper{
-    margin-top: 70px;
-    
-    
-
-}
-
-.card{
-    height: 450px;
-    margin-left: 50px;
-    margin-right: 50px;
-    border-radius: 5px;
-    width: 300px;
-}
-
-.card-title{
-    text-align: center;
-}
-
-.card-text{
-    text-align: center;
-}
-
-.buttoncard{
-    margin-left: 35px;
-    width: 200px;
-    border-radius: 10px;
-    background-color: #BE6DBD;
-    transition: 1s;
-    
-    
-   
-}
 
  
 
-.buttoncard:hover{
-    transform: translateY(-3px);
-    background-color: #a1a1a1;
-}
 
-.infos-card{
-    display: flex;
-    justify-content: space-between;
-    margin-left: 20px;
-    margin-right: 20px;
-    padding-top: 20px;
-}
 
-.input1{
-    width: 300px;
-}
-
-.titlecards{
-    font-family: "Trade Winds", system-ui;
-}
 
 footer{
     margin-top: 50px;

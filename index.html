@@ -102,13 +102,6 @@
 
   </div>
 
-
-
-
-
-
-
-
 <div class="swiper mySwiper">
   <div class="swiper-wrapper">
 
@@ -202,7 +195,7 @@
 
 
 <section class="card2">
-  <div class="infos-card">
+   <div class="infos-card">
   <h3 class="titlecards">Comidas</h3>
   <div class="search-wrapper">
     <input type="text" placeholder="Pesquise pelo seu produto" class="input1" id="inputPesquisa">
@@ -216,14 +209,9 @@
     <option value="">Industrializados</option>
     <option value="">Produtos naturais</option>
   </select>
-</section>
+</div>
 
-
-
-
-
-
-
+  </div>
 
 <div class="swiper mySwiper">
   <div class="swiper-wrapper">
@@ -313,6 +301,17 @@
   <div class="swiper-button-prev"></div>
   <div class="swiper-pagination"></div>
 </div>
+</section>
+ 
+
+
+
+
+
+
+
+
+
 </section>
 
 
@@ -423,26 +422,25 @@ const mobileNavbar = new MobileNavbar(
 
 mobileNavbar.init(); 
 
-window.addEventListener("scroll", function() {
-  const nav = document.querySelector("nav");
-
-  if (window.scrollY > 50) { 
-    nav.classList.add("sticky");
-  } else {
-    nav.classList.remove("sticky");
-  }
-});
-
-// parte para deixar o menu fixo ao rolar a página
 window.addEventListener("scroll", function () {
     const nav = document.querySelector("nav");
+    const btn = document.getElementById("retornarTopoBtn");
+    const y = window.scrollY;
 
-    if (window.scrollY > 0) {
+    // ====== sticky navbar ======
+    if (y > 0) {
         nav.classList.add("sticky");
         document.body.classList.add("menu-sticky");
     } else {
         nav.classList.remove("sticky");
         document.body.classList.remove("menu-sticky");
+    }
+
+    // ====== botão aparecer após 50px ======
+    if (y > 50) {
+        btn.style.display = "block";
+    } else {
+        btn.style.display = "none";
     }
 });
 
