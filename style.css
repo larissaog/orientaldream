@@ -161,6 +161,8 @@ nav.sticky {
         padding-left: 15px !important; /* opcional: puxa o carrossel um pouquinho da borda */
     }
 
+    
+
 
 
 
@@ -214,12 +216,6 @@ footer{
      background-color: white;
 }
 
-.button-nav:hover{
-    background-color:rgb(231, 231, 231);
-}
-.button-nav1:hover{
-    background-color: rgb(231, 231, 231);
-}
 
 .sublist{
     display: flex;
@@ -251,6 +247,14 @@ footer{
 .modal-content {
   overflow-x: hidden;
 }
+.facilidades-pai{
+        display: flex;
+        gap: 20px;
+    }
+
+    .emailfooter{
+        margin-bottom: 10px !important;
+    }
     
 
 }
@@ -259,7 +263,9 @@ footer{
 @media (max-width: 480px) {
     
    
-
+    .emailfooter{
+        margin-bottom: 10px !important;
+    }
     .input1 {
         width: 90%;
         max-width: 300px;
@@ -288,6 +294,11 @@ footer{
 
     .swiper-wrapper {
         padding-left: 15px !important; /* opcional:puxa o carrossel um pouquinho da borda */
+    }
+
+    .facilidades-pai{
+        display: flex;
+        gap: 20px;
     }
 
   
@@ -405,6 +416,7 @@ a{
 
 .bemvindo{
      font-family: "Trade Winds", system-ui;
+     background-color: #BE6DBD;
 }
 
 
@@ -422,7 +434,7 @@ a{
 footer{
     margin-top: 50px;
     background-color: black;
-    height: 250px;
+    height: 270px;
     color: white;
     
 }
@@ -456,6 +468,7 @@ footer{
 
 .emailfooter{
     text-align: center;
+    
 }
 
 .brasil{
@@ -503,4 +516,28 @@ footer{
     border-radius: 10px;
     width: 50px;
     height: 50px;
+}
+
+.imgfacilidade{
+    filter: invert(100%);
+}
+
+.facilidades-pai{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 50px;
+    
+}
+
+.facilidades{
+    background-color: #BE6DBD;
+    height: 300px;
+
+}
+
+.titlefaci{
+    text-align: center;
+    padding-top: 10px;
 }
