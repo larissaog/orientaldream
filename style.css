@@ -201,6 +201,46 @@ footer{
         padding-left: 15px !important; /* opcional: puxa o carrossel um pouquinho da borda */
     }
 
+      .imgs{
+        display: flex;
+        gap: 20px;
+}
+
+.imgcolor{
+    filter: invert(100%);
+}
+
+.button-nav1{
+    background-color: white;
+}
+
+.button-nav{
+     background-color: white;
+}
+
+.button-nav:hover{
+    background-color:rgb(231, 231, 231);
+}
+.button-nav1:hover{
+    background-color: rgb(231, 231, 231);
+}
+
+.sublist{
+    display: flex;
+    width: 230px;
+}
+.button2nav{
+   background-color: white;
+}
+
+.paisociais{
+    margin-top: 35px;
+    display: flex;
+    gap: 10px;
+}
+
+    
+
 }
 
 /* ======== MOBILE ======== */
@@ -243,6 +283,9 @@ footer{
     .swiper-wrapper {
         padding-left: 15px !important; /* opcional: puxa o carrossel um pouquinho da borda */
     }
+
+  
+    
  
 }
 
