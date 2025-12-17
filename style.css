@@ -334,9 +334,7 @@ footer{
 
 }
 
-#exampleModal{
-    background-color: #BE6DBD;
-}
+
 
 
 
@@ -458,3 +456,14 @@ footer{
     
 }
 
+/* config de modais */
+
+.modal-infoimg{
+    display: flex;
+
+}
+
+.modal-dialog {
+    max-width: 800px; /* largura máxima */
+    width: 90%;       /* largura responsiva */
+}
