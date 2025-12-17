@@ -256,6 +256,8 @@ footer{
     .facilidades-pai{
     display: flex;
     gap: 2px;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
    }
     
 
