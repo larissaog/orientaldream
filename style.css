@@ -182,7 +182,7 @@ nav.sticky {
 }
 
 footer{
-    height: 240px !important;
+    height: 270px !important;
 }
 
 .card{
@@ -261,7 +261,10 @@ footer{
     
    
     .emailfooter{
-        margin-bottom: 10px !important;
+        margin-bottom: 20px !important;
+    }
+    footer{
+        height: 300px !important;
     }
     .input1 {
         width: 90%;
