@@ -240,7 +240,7 @@ footer{
     gap: 10px;
 }
 
-.modal-infoimg {
+.grupo-pai {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -474,59 +474,26 @@ footer{
 }
 
 /* config de modais */
-
-.modal-infoimg{
-   
-
-}
-
 .modal-dialog {
     max-width: 900px; /* largura máxima */
     width: 90%;       /* largura responsiva */
 }
 
-
-
-.linha{
-    width: 100%;
-   border: 1px solid rgb(0, 0, 0);
+.modal-content {
+    overflow-x: hidden; /* impede rolagem horizontal */
 }
-
-.escohas{
+.modal-body {
+    padding: 20px; /* espaçamento interno */
+}
+.grupo-pai{
     display: flex;
-    gap: 10px;
-    flex-direction: column;
-    margin-top: 15px;
+    
 }
 
-.modal-infoimg{
+.selecionar{
     display: flex;
 }
-.paimodal{
+.quantidade{
     display: flex;
-    flex-direction: column;
-}
-
-.titlemodal{
-    text-align: center;
-    font-family: "BBH Bogle", sans-serif;
-}
-
-.tamanhoes{
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
-}
-
-.descricao{
-    text-align: center;
-}
-
-.btn-modal{
-    background-color: black;
-    border: none;
-    width: 40px;
-    height: 30px;
-    border-radius: 10px;
+    
 }
