@@ -252,6 +252,11 @@ footer{
     .emailfooter{
         margin-bottom: 10px !important;
     }
+
+    .facilidades-pai{
+    display: flex;
+    gap: 5px;
+   }
     
 
 }
@@ -259,7 +264,10 @@ footer{
 /* ======== MOBILE ======== */
 @media (max-width: 480px) {
     
-   
+   .facilidades-pai{
+    display: flex;
+    gap: 5px;
+   }
     .emailfooter{
         margin-bottom: 20px !important;
     }
