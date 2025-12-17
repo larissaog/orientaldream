@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BBH+Bogle&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -494,6 +495,8 @@ footer{
 .escohas{
     display: flex;
     gap: 10px;
+    flex-direction: column;
+    margin-top: 15px;
 }
 
 .modal-infoimg{
@@ -502,4 +505,20 @@ footer{
 .paimodal{
     display: flex;
     flex-direction: column;
+}
+
+.titlemodal{
+    text-align: center;
+    font-family: "BBH Bogle", sans-serif;
+}
+
+.tamanhoes{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.descricao{
+    text-align: center;
 }
