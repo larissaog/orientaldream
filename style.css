@@ -467,3 +467,21 @@ footer{
     max-width: 800px; /* largura máxima */
     width: 90%;       /* largura responsiva */
 }
+
+.modal-infoimg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+}
+
+.modal-infoimg img {
+  max-width: 100%;
+  height: auto;
+}
+
+.modal-content {
+  overflow-x: hidden;
+}
+
