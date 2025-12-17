@@ -138,7 +138,8 @@ nav.sticky {
 
     .buttons {
         margin-left: 0 !important;
-        gap: 10px;
+        gap: 0px !important;
+        
     }
 
     .button2nav{
