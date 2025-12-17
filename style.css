@@ -526,7 +526,7 @@ footer{
 }
 
 .imgfacilidade{
-    filter: invert(100%);
+    /* filter: invert(100%); */
 }
 
 .facilidades-pai{
@@ -539,8 +539,9 @@ footer{
 }
 
 .facilidades{
-    background-color: #BE6DBD;
+    background-color: #000000;
     height: 300px;
+    color: white;
 
 }
 
