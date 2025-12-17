@@ -246,13 +246,7 @@ footer{
 /* ======== MOBILE ======== */
 @media (max-width: 480px) {
     
-    /* .infos-card {
-        flex-direction: column;
-        gap: 15px;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-    } */
+   
 
     .input1 {
         width: 90%;
