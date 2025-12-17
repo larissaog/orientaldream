@@ -247,10 +247,7 @@ footer{
 .modal-content {
   overflow-x: hidden;
 }
-.facilidades-pai{
-        display: flex;
-        gap: 20px;
-    }
+
 
     .emailfooter{
         margin-bottom: 10px !important;
@@ -296,10 +293,7 @@ footer{
         padding-left: 15px !important; /* opcional:puxa o carrossel um pouquinho da borda */
     }
 
-    .facilidades-pai{
-        display: flex;
-        /* gap: 20px; */
-    }
+    
 
   
     
