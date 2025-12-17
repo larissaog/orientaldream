@@ -1,19 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=BBH+Bogle&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     font-family: "Roboto Flex", sans-serif;
 }
-
-/*body.menu-sticky {
-    padding-top: 8vh; /* mesma altura do nav */
-
-    /* padding-left: env(safe-area-inset-left);
-    padding-right: env(safe-area-inset-right);
-}*/ 
+ 
 
 
 
@@ -302,16 +296,16 @@ footer{
 
 /* config dos cards GERAL */
 .card1, .card2{
-    height: 700px;
+    height: 650px;
 }
 
 .card1{
-    background-color: aqua;
-    margin-bottom: 30px;
+    
+    /* margin-bottom: 30px; */
 }
 
 .card2{
-    background-color: rgb(202, 220, 39);
+    
 }
 
 .infos-card{
@@ -324,7 +318,22 @@ footer{
     gap: 10px;
 }
 
+.btn-card{
+    border: 1px solid black;
+    width: 100px;
+    height: 30px;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    
+}
 
+.divbuttonmodal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
 
 .swiper-slide {
         margin-right: 30px !important; /* espaço entre os cards */
@@ -336,19 +345,8 @@ footer{
     }
  
 .card-title{
-
-}
-
-.card-text{
-
-}
-
-.buttoncard{
-
-}
-
-.btn{
-
+    text-align: center;
+    
 }
 
 
