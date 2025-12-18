@@ -86,3 +86,90 @@
 }
 
 /* parte do cadastro */
+
+
+.filho1{
+   background-color: #BE6DBD;
+   border-radius: 30px;
+    height: 480px;
+}
+
+.title-cadastro{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    align-items: center;
+   
+    
+}
+
+.intupsclass{
+    width: 300px;
+    padding: 2px;
+    margin-bottom: 6px
+}
+
+.intupsclasscpf{
+    width: 250px;
+}
+
+.cpf{
+    display: flex;
+    gap: 6px;
+     margin-bottom: 6px;
+     padding: 2px;
+}
+
+.cpfdigito{
+    width: 44px;
+    padding: 2px;
+}
+
+.intupsclasscep{
+    width: 150px;
+    padding: 2px;
+    margin-bottom: 6px;
+    
+}
+.cep{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.radio{
+    margin-top: 15px;
+    
+}
+
+.titlegenero{
+    text-align: center;
+}
+
+.radios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.avisos{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+
+.button-cadastrar{
+    width: 150px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}

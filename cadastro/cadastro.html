@@ -64,27 +64,39 @@
         <!-- cadastro -->
          <div class="filho1">
             <div class="titlecadastra">
-                <h2>Cadastre-se</h2>
+                <h2 class="title-cadastro">Cadastre-se</h2>
             </div>
 
             <div class="inputs">
                 <form action="">
                     <label for="">
-                        <input type="text" placeholder="Nome Completo" required> <br>
+                        <input type="text" placeholder="Nome Completo" required class="intupsclass"> <br>
 
                     </label>
                     <label for="">
-                        <input type="email" placeholder="Email" required><br>
+                        <input type="email" placeholder="Email" required class="intupsclass"><br>
+                    </label>
+                    <div class="cpf">
+                        <input type="number" placeholder="CPF" required class="intupsclasscpf" maxlength="9">
+                        <input type="number" class="cpfdigito" maxlength="2">
+                    </div>
                     </label>
                     <label for="">
-                        <input type="password" placeholder="Senha" required><br>
+                        <input type="password" placeholder="Senha" required class="intupsclass"><br>
                     </label>
                     <label for="">
-                        <input type="date"  required>
+                        <input type="date"  required class="intupsclass"><br>
                     </label>
+                    <div class="cep">
+                         <label for="">
+                        <input type="number" placeholder="Insira seu cep" required class="intupsclasscep"><br>
+                    </label>
+                    </div>
+                   
                     <div class="radio">
-                        <p>Gênero</p>
-                      <label for="">
+                        <p class="titlegenero">Gênero</p>
+                        <div class="radios">
+                             <label for="">
                     <input type="radio" name="1">Masculino
                     </label>
                       <label for="">
@@ -93,6 +105,8 @@
                      <label for="">
                     <input type="radio" name="1">Outros
                     </label>
+                        </div>
+                     
                     </div>
                     
                 </form>
@@ -103,7 +117,7 @@
                 </div>
 
                 <div class="button">
-                    <button>Cadastrar-se</button>
+                    <button class="button-cadastrar">Cadastrar-se</button>
                 </div>
             </div>
 
