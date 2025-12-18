@@ -79,6 +79,7 @@ body{
 
 }
 .input-login{
+    margin-bottom: 10px;
     width: 300px;
     padding: 5px;
 }
