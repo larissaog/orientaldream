@@ -5,8 +5,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+   
 }
-
+body{
+     background-color: #f1bbf0;
+}
 .imgsaida{
     filter: invert(100%);
 }
@@ -89,8 +92,8 @@
 
 
 .filho1{
-   background-color: #BE6DBD;
-   border-radius: 30px;
+   background-color: #d78ed5;
+   
     height: 480px;
 }
 
@@ -191,4 +194,8 @@
         
     
     }
+}
+
+.filho{
+    
 }
