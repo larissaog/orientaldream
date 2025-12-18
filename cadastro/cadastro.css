@@ -1,0 +1,49 @@
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.imgsaida{
+    filter: invert(100%);
+}
+
+.saida{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+
+.img-logo{
+    display: flex;
+}
+
+.pai{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 130px;
+    
+}
+
+.filho{
+    display: flex;
+    flex-direction: column;
+   
+    
+}
+.filho1{
+    display: flex;
+    flex-direction: column;
+   
+    
+}
+
+.google, .facebook{
+    display: flex;
+}
