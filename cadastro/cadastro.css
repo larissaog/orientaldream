@@ -28,6 +28,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 130px;
+    gap: 100px;
     
 }
 
@@ -46,4 +47,42 @@
 
 .google, .facebook{
     display: flex;
+    border: 1px solid #000000;
+    width: 250px;
+    padding: 5px;
 }
+
+.redessociais{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.redes-title{
+    margin-left: 10px;
+}
+
+.textoprincipal{
+    text-align: center;
+}
+
+.ou{
+    text-align: center;
+}
+
+.entrar{
+    margin-top: 10px;
+
+}
+.input-login{
+    width: 300px;
+    padding: 5px;
+}
+
+.recuperacao{
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* parte do cadastro */
