@@ -197,6 +197,11 @@ body{
     }
 }
 
-.filho{
-    
+.namefooter{
+    text-align: center;
+}
+
+footer{
+    margin-top: 50px;
+    margin-bottom: 10px;
 }
