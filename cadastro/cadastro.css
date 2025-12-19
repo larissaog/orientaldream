@@ -8,7 +8,7 @@
    
 }
 body{
-     background-color: #f1bbf0;
+     /* background-color: #f1bbf0; */
 }
 .imgsaida{
     filter: invert(100%);
@@ -93,7 +93,7 @@ body{
 
 
 .filho1{
-   background-color: #d78ed5;
+   /* background-color: #d78ed5; */
    
     height: 480px;
 }
