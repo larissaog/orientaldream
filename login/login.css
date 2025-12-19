@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+
+.imgsaida{
+    filter: invert(100%);
+}
+
+.saida{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    flex-direction: column;
+}
+.textoprincipal{
+    text-align: center;
+    
+}
+.p-login{
+    margin-top: 10px;
+}
+
+.input-login{
+    margin-bottom: 10px;
+    width: 400px;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+.inputs{
+    margin-top: 50px;
+
+}
+
+
+.button-principal{
+    margin-top: 30px;
+    width: 400px;
+    padding: 10px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.linha{
+    margin-top: 50px;
+    border: 1px solid #7d7d7d;
+    width: 400px;
+}
+
+.google, .facebook{
+    display: flex;
+    border: 1px solid #000000;
+    width: 250px;
+    padding: 5px;
+}
+
+.redessociais{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.redes-title{
+    margin-left: 10px;
+   
+}
