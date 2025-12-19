@@ -224,4 +224,15 @@ footer{
     .button-cadastrar{
         margin-bottom: 10px;
     }
+
+    .redessociais{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .entrar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
