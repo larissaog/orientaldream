@@ -84,9 +84,7 @@ nav.sticky {
     color: rgb(0, 0, 0);
 }
 
-.pesquisar {
-    width: 250px;
-}
+
 
 .button2nav {
     width: 100px;
@@ -99,6 +97,14 @@ nav.sticky {
     margin-left: 250px;
     display: flex;
     gap: 50px;
+}
+
+/* lugar da barra de pesquisa */
+.pesq{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
 /* ======== MOBILE ======== */
