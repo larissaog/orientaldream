@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -55,4 +56,21 @@ footer{
     display: flex;
     justify-content: center;
 
+}
+
+header{
+    background-color:black ;
+    color: white;
+    height: 50px;
+
+}
+
+.header-title{
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.p-header{
+     font-family: "Trade Winds", system-ui;
 }
