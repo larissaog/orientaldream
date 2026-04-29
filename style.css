@@ -107,6 +107,32 @@ nav.sticky {
     gap: 20px;
 }
 
+.buttonpesquisa{
+    width: 100px;
+    background-color: #F4D697;
+
+
+}
+.buttonpesquisa:hover{
+    background-color: #BE6DBD;
+    cursor: pointer;
+}
+.input-pesquisa{
+    width: 250px;
+}
+
+/* carrinho */
+.carr{
+    display: flex;
+    justify-content: end;
+    margin-right: 40px;
+    margin-top: 20px;
+}
+
+.carr-fig{
+    filter: invert(100%);
+}
+
 /* ======== MOBILE ======== */
 @media (max-width: 999px) {
 
