@@ -25,8 +25,8 @@
           <div class="sublist">
             </div>
             <div class="buttons">
-             <a href="./cadastro/cadastro.html"> <button class="button-nav1">Cadastro</button></a>
-            <a href="./login/login.html"><button class="button-nav">Login</button></a>
+             <a href="./loginOrientalDream/cadastro/cadastro.php"> <button class="button-nav1">Cadastro</button></a>
+            <a href="./loginOrientalDream/login/login.php"><button class="button-nav">Login</button></a>
         </div>
 
          <!-- EXTRA que só aparece quando o menu abre -->
@@ -82,7 +82,7 @@
     </section>
     <section>
       <div class="carr">
-       <a href=""> <img src="img/carr.png" alt="" class="carr-fig"></a>
+       <a href="carrinho.php"> <img src="img/shopping_cart_42dp_E3E3E3_FILL0_wght400_GRAD0_opsz40.png" alt="" class="carr-fig"></a>
       </div>
     </section>
 <section>
@@ -248,52 +248,108 @@
 
 <!-- modais do primeiro grupo de card -->
 
- <!--modal0  -->
-
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+ <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Chá verde</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <div class="grupo-pai">
-          <div class="img-modal">
-            <img src="./img/chaverde.webp" alt="" height="300px">
-          </div>
-          <div class="info-modal">
-            <p><strong>Descrição:</strong> Chá verde japonês de alta qualidade, conhecido pelo sabor leve, refrescante e natural. Produzido sem adição de açúcar ou conservantes, é uma excelente opção para quem busca hidratação, bem-estar e uma bebida saudável para consumir a qualquer hora do dia.</p>
-            <p><strong>Preço:</strong> R$ 25,00</p>
-            <p><strong>Disponibilidade:</strong> Em estoque</p>
-            <div class="selecionar">
-              <p><strong>Selecione o tamanho:</strong></p>
-              <label for="">
-                <input type="radio" name="0"> Pequeno
-              </label>
 
-              <label for="">
-                <input type="radio" name="0"> Grande
-              </label>
-            </div>
-            <div class="quantidade">
-                     <p><strong>Selecione a quantidade:</strong></p>
-            <select name="" id="">
-              <option value="">1</option>
-              <option value="">2</option>
-              <option value="">3</option>
-              <option value="">4</option>
-              <option value="">5</option>
-            </select>
-            </div>
-            <p><strong>Avaliações:</strong> ★★★★☆ (150 avaliações)</p>
-          </div>
+      <form action="adicionar_carrinho.php" method="POST">
+
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Chá verde</h1>
+
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
         </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn-modal" data-bs-dismiss="modal"><img src="img/arrow_back_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" alt=""></button>
-        <button type="button" class="btn-modal"><img src="img/shopping_cart_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" alt=""></button>
-      </div>
+
+        <div class="modal-body">
+
+          <div class="grupo-pai">
+
+            <div class="img-modal">
+              <img src="./img/chaverde.webp" alt="" height="300px">
+            </div>
+
+            <div class="info-modal">
+
+              <input type="hidden" name="nome" value="Chá verde">
+              <input type="hidden" name="preco" value="25.00">
+              <input type="hidden" name="imagem" value="chaverde.webp">
+
+              <p>
+                <strong>Descrição:</strong>
+                Chá verde japonês de alta qualidade...
+              </p>
+
+              <p><strong>Preço:</strong> R$ 25,00</p>
+
+              <p><strong>Disponibilidade:</strong> Em estoque</p>
+
+              <div class="selecionar">
+
+                <p><strong>Selecione o tamanho:</strong></p>
+
+                <label>
+                  <input type="radio"
+                         name="tamanho"
+                         value="Pequeno"
+                         required>
+
+                  Pequeno
+                </label>
+
+                <label>
+                  <input type="radio"
+                         name="tamanho"
+                         value="Grande">
+
+                  Grande
+                </label>
+
+              </div>
+
+              <div class="quantidade">
+
+                <p><strong>Selecione a quantidade:</strong></p>
+
+                <select name="quantidade">
+
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+
+                </select>
+
+              </div>
+
+              <p><strong>Avaliações:</strong> ★★★★☆ (150 avaliações)</p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="modal-footer">
+
+          <button type="button"
+                  class="btn-modal"
+                  data-bs-dismiss="modal">
+
+            <img src="img/arrow_back_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" alt="">
+
+          </button>
+
+          <button type="submit" class="btn-modal">
+
+            <img src="img/shopping_cart_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" alt="">
+
+          </button>
+
+        </div>
+
+      </form>
+
     </div>
   </div>
 </div>
@@ -342,7 +398,16 @@
       </div>
       <div class="modal-footer">
        <button type="button" class="btn-modal" data-bs-dismiss="modal"><img src="img/arrow_back_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" alt=""></button>
-        <button type="button" class="btn-modal"><img src="img/shopping_cart_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" alt=""></button>
+       <form action="adicionar_carrinho.php" method="POST">
+    
+    <input type="hidden" name="nome" value="Chá verde">
+    <input type="hidden" name="preco" value="25.00">
+
+    <button type="submit" class="btn-modal">
+        <img src="img/shopping_cart_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" alt="">
+    </button>
+
+</form>
       </div>
     </div>
   </div>
@@ -391,7 +456,16 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <form action="adicionar_carrinho.php" method="POST">
+    
+    <input type="hidden" name="nome" value="Chá verde">
+    <input type="hidden" name="preco" value="25.00">
+
+    <button type="submit" class="btn-modal">
+        <img src="img/shopping_cart_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" alt="">
+    </button>
+
+</form>
       </div>
     </div>
   </div>
@@ -441,7 +515,16 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn-modal" data-bs-dismiss="modal"><img src="img/arrow_back_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" alt=""></button>
-        <button type="button" class="btn-modal"><img src="img/shopping_cart_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" alt=""></button>
+        <form action="adicionar_carrinho.php" method="POST">
+    
+    <input type="hidden" name="nome" value="Chá verde">
+    <input type="hidden" name="preco" value="25.00">
+
+    <button type="submit" class="btn-modal">
+        <img src="img/shopping_cart_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" alt="">
+    </button>
+
+</form>
       </div>
     </div>
   </div>
