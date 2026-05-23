@@ -1,11 +1,28 @@
 <?php
 
+
+
+/* VERIFICA LOGIN */
+session_start();
+
+if (!isset($_SESSION['usuario_id'])) {
+
+    $_SESSION['redirect_after_login'] = '/orientaldream/finalizar.php';
+
+    header('Location: /orientaldream/loginOrientalDream/login/login.php');
+
+    exit;
+}
+
+
+
 $conn = new mysqli(
     "localhost",
     "root",
     "",
     "carrinho_orientaldream"
 );
+
 
 $resultado = $conn->query("SELECT * FROM carrinho");
 
@@ -88,6 +105,15 @@ $conn->query("DELETE FROM carrinho");
     <title>Pedido Finalizado</title>
 </head>
 <body>
+
+<h1>
+    Obrigado pela compra,
+    <?php echo $_SESSION['usuario_nome']; ?>! 🎉
+</h1>
+
+<p>
+    Seu pedido foi finalizado com sucesso.
+</p>
 
 <h1>Pedido finalizado com sucesso! 🎉</h1>
 

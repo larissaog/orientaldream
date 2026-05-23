@@ -1,4 +1,6 @@
-
+<?php
+session_start();
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -97,7 +99,28 @@
   </div>
 </section>
 
+<?php if(isset($_SESSION['usuario_id'])): ?>
+    <p style="margin-left: 20px">
+        Logado como:
+        <strong>
+            <?php echo $_SESSION['usuario_nome']; ?> | 
+        </strong>
+        <a href="/orientaldream/loginOrientalDream/login/logout.php" style="color: red;">
+        Sair
+    </a>
+    </p>
 
+    
+
+<?php else: ?>
+
+    <p style="margin-left: 20px">Você não está logado: <a href="/orientaldream/loginOrientalDream/login/login.php" style="color: green;">
+        Fazer login
+    </a> </p>
+
+    
+
+<?php endif; ?>
 <section class="barrapesquisa-principal">
   <!-- Removemos o form e deixamos apenas uma div para evitar que a página recarregue -->
   <div class="pesq">
