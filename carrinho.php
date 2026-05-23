@@ -94,7 +94,7 @@ $total = 0;
 
         <div class="produto">
 
-            <img src="<?php echo $produto['imagem']; ?>">
+            <img src="/orientaldream/img/<?php echo trim($produto['imagem']); ?>">
 
             <div class="info">
 
