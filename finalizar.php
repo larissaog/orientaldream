@@ -16,12 +16,32 @@ if (!isset($_SESSION['usuario_id'])) {
 
 
 
-$conn = new mysqli(
-    "localhost",
-    "root",
-    "",
-    "carrinho_orientaldream"
-);
+
+if($_SERVER['HTTP_HOST'] == 'localhost') {
+
+    // Configuração local (XAMPP)
+    $conn = new mysqli(
+        "localhost",
+        "root",
+        "",
+        "carrinho_orientaldream"
+    );
+
+} else {
+
+    // Configuração InfinityFree
+    $conn = new mysqli(
+        "sql301.infinityfree.com", // host do banco
+        "if0_41632609",             // usuário
+        "tPa9yE9WJQzS",
+        "if0_41632609_carrinho_orientaldream"
+    );
+
+}
+
+if($conn->connect_error) {
+    die("Erro na conexão: " . $conn->connect_error);
+}
 
 
 $resultado = $conn->query("SELECT * FROM carrinho");
@@ -103,19 +123,19 @@ $conn->query("DELETE FROM carrinho");
 <head>
     <meta charset="UTF-8">
     <title>Pedido Finalizado</title>
+    <link rel="stylesheet" href="finalizar.css">
 </head>
 <body>
-
-<h1>
+<div class="pai">
+<h2>
     Obrigado pela compra,
     <?php echo $_SESSION['usuario_nome']; ?>! 🎉
-</h1>
+</h2>
 
-<p>
+<p class="finalizarpedido">
     Seu pedido foi finalizado com sucesso.
 </p>
 
-<h1>Pedido finalizado com sucesso! 🎉</h1>
 
 <p>
     Total:
@@ -127,6 +147,6 @@ $conn->query("DELETE FROM carrinho");
 <a href="index.php">
     Voltar para loja
 </a>
-
+</div>
 </body>
 </html>
